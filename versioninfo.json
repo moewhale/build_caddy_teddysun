@@ -1,0 +1,27 @@
+{
+    "FixedFileInfo": {
+        "FileVersion": {
+            "Major": %MAJOR%,
+            "Minor": %MINOR%,
+            "Patch": %PATCH%,
+            "Build": %BUILD%
+        },
+        "ProductVersion": {
+            "Major": %MAJOR%,
+            "Minor": %MINOR%,
+            "Patch": %PATCH%,
+            "Build": %BUILD%
+        }
+    },
+    "StringFileInfo": {
+        "CompanyName": "Stack Holdings GmbH",
+        "FileDescription": "Caddy Web Server",
+        "FileVersion": "%VERSION%",
+        "InternalName": "caddy.exe",
+        "LegalCopyright": "(c) ZeroSSL. All rights reserved.",
+        "OriginalFilename": "caddy.exe",
+        "ProductName": "Caddy",
+        "ProductVersion": "%VERSION%"
+    },
+    "IconPath": "assets/caddy_1.ico,assets/caddy_2.ico,assets/caddy_3.ico,assets/caddy_4.ico,assets/caddy_5.ico,assets/caddy_6.ico,assets/caddy_7.ico"
+}
