@@ -46,7 +46,7 @@ if hash goversioninfo 2>/dev/null; then
 fi
 
 OSES=(windows)
-ARCHS=(amd64 386 arm64 arm)
+ARCHS=(amd64 386 arm64)
 suffix=".exe"
 for os in "${OSES[@]}"; do
     for arch in "${ARCHS[@]}"; do

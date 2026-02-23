@@ -51,7 +51,6 @@ bash build-release.sh v2.10.2
 caddy_v2.10.2_windows_amd64.exe
 caddy_v2.10.2_windows_386.exe
 caddy_v2.10.2_windows_arm64.exe
-caddy_v2.10.2_windows_arm.exe
 ```
 
 ### 手动构建
