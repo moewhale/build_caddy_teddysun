@@ -11,6 +11,7 @@ import (
     _ "github.com/caddyserver/replace-response"
     _ "github.com/mholt/caddy-webdav"
     _ "github.com/caddy-dns/cloudflare"
+    _ "github.com/WeidiDeng/caddy-cloudflare-ip"
 )
 
 func main() {
