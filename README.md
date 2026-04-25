@@ -39,7 +39,7 @@
 
 ### 构建
 
-运行构建脚本，指定 Caddy 版本号：
+运行构建脚本，版本号默認最新版：
 
 ```bash
 apt-get -y install wget git
@@ -47,6 +47,12 @@ git clone https://github.com/moewhale/build_caddy_teddysun.git
 mv build_caddy_teddysun build_caddy
 cd build_caddy
 chmod +x *.sh
+bash build-release.sh
+```
+
+可手動指定 Caddy 版本号：
+
+```bash
 bash build-release.sh v2.10.2
 ```
 
