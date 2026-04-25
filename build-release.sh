@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Example: v2.10.2 Default: Latest version
-VERSION=${1:-$(curl -s https://api.github.com/repos/caddyserver/caddy/releases/latest | grep -oE '"tag_name":\s*"v[0-9.]+"' | grep -oE 'v[0-9.]+')}
+VERSION=${1:-$(curl -s https://api.github.com/repos/caddyserver/caddy/releases/latest | grep -oE '"tag_name":\s*"v[0-9.]+"' | grep -oE 'v[0-9.]+' | head -n 1)}
 LDFLAGS="-s -w -buildid="
 [ -z "${VERSION}" ] && echo "[$(date)] Argument 1 is missing, Example: v2.10.2" && exit 1
 
