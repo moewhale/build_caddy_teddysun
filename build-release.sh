@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Example: v2.10.2
-VERSION="$1"
+# Example: v2.10.2 Default: Latest version
+VERSION=${1:-$(curl -s https://api.github.com/repos/caddyserver/caddy/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')}
 LDFLAGS="-s -w -buildid="
 [ -z "${VERSION}" ] && echo "[$(date)] Argument 1 is missing, Example: v2.10.2" && exit 1
 
